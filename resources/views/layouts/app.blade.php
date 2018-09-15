@@ -1,8 +1,5 @@
 @extends('layouts.base')
 
-@section('navigation')
-    @include('layouts.partials._nav')
-@endsection
 @section('page')
     <div id="app">
         @yield('content')
