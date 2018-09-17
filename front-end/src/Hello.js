@@ -9,6 +9,10 @@ function formatHi(stmt) {
 
 
 
+
+
+
+
 const stmt = {
    firstWord: 'New Element',
    lastWord: 'React JS'
