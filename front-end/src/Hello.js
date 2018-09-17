@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // should be named same as class 
-import './Hello.css';
+import './css/Hello.css';
 
 function formatHi(stmt) {
    return stmt.firstWord + ' ' + stmt.lastWord + '!';
