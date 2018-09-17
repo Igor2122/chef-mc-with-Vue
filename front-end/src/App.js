@@ -6,23 +6,14 @@ import './css/Hello.css';
 
 
 import Hello  from './Hello';
+// import HomeDiv from './homeComp/HomeDiv';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-      <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></link>
-      </head>
-
-        <header className="App-header">
-          {/* <img src={logo} className="App-logo" alt="logo" /> */}
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Hello message="Some Message"></Hello>
+        {/* <HomeDiv></HomeDiv> */}
+        <Hello />
       </div>
     );
   }
