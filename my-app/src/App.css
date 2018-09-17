@@ -1,0 +1,31 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+.App {
+   height: 100vh;
+}
+
+.navigation {
+   display: flex;
+   flex-direction: row;
+   width: 40%;
+   justify-content: space-around;
+   text-decoration: none;
+   list-style: none;
+}
+
+.navigation>li {
+   font-size: 1.4em;
+}
+
+.col-md-4 {
+   padding: 20% 0;
+   height: 80%;
+   text-align: center;
+}
+
+body {
+    background: center / cover no-repeat url("https://images.unsplash.com/photo-1481185103603-1dc844ef51db?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e66481a6d1211fd1e183f1085d01bf8a&auto=format&fit=crop&w=1053&q=80");
+}
