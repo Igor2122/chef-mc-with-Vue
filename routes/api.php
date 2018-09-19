@@ -17,24 +17,35 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get(
-    '/users',
-    function () {
-        return \App\User::all();
-    }
-);
-Route::get(
-    '/products',
-    function () {
-        return \App\Product::all();
-    }
-);
-Route::get(
-    '/tasks',
-    function () {
-        return \App\Task::all();
-    }
-);
+// Route::get(
+//     '/users',
+//     function () {
+//         return \App\User::all();
+//     }
+// );
+// Route::get(
+//     '/products',
+//     function () {
+//         return \App\Product::all();
+//     }
+// );
+// Route::get(
+//     '/tasks',
+//     function () {
+//         return \App\Task::all();
+//     }
+// );
+
+// DB ROUTES 
+
+Route::get('products', 'ProductsController@index');
+
+Route::get('products/{product}', 'ProductsController@show');
+
+Route::post('products', 'ProductsController@store');
+
+Route::put('products/{product}', 'ProductsController@update');
+
+Route::delete('products/{product}', 'ProductsController@delete');
 
 
-//Route::resource('/categories', 'Api\CategoriesController');

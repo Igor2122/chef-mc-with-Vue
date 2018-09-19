@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 // Auth::routes();
 
@@ -40,3 +40,9 @@ Route::get('/', function () {
 //     return view('index');
 // });
 
+// Route::get('/{any}', 'SpaController@index')->where('any', '.*');
+
+Route::get('/', function () {
+    return view('index');
+});
+// Route::resource('items', 'ItemController');
